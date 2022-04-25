@@ -1,38 +1,92 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+/* .App
+{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+} */
+.container {
+  box-sizing: border-box;
+  /* display: grid;
+  grid-template-columns: 400px 100px; */
+  display: flex;
+
+  
+}
+
+.button1{
+  border: none;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid;
+
+}
+
+.button2
+{
+  position: relative;
+    border-top: 50px solid #EA4335;
+    border-right: 50px solid #4285F4;
+    border-bottom: 50px solid #34A853;
+    border-left: 50px solid #FBBC05;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    margin: 10vh auto 0;
+}
+
+
+.button2::before {
+  content: "";
+  z-index: 100;
+  position: absolute;
+  top: 40%;
+  right: -42.5px;
+  transform: translateY(-50%);
+  width: 122.5px;
+  height:40px;
+  background: #4285F4;
+}
+
+.button2::after {
+  content: "";
+  z-index: 105;
+  position: absolute;
+  border-top:46px solid transparent;
+  border-right:105px solid #fff;
+  top: -27px;
+  right: -47px;
+  width: 90px;
+  height: 31px;
+}
+
+body {
+  background: #1C8EF9 !important;
+  max-height: 100px;
+  max-width: 600px;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+  position:relative;
+  top:4rem;
+  left:23rem;
+}
+body,.App, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.gglogin{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ img{
+  max-height: 900px;
+  max-width: 400px;
+ }
